@@ -43,6 +43,11 @@ function calculateResults(){
 
 //show Error
 function showError(error){
+  //hide result
+  document.getElementById('result').style.display = 'none';
+  //hide loader
+  document.getElementById('loading').style.display = 'none';
+  //create div
   const errorDiv = document.createElement('div');
   errorDiv.className = 'alert alert-danger';
   errorDiv.appendChild(document.createTextNode(error));
